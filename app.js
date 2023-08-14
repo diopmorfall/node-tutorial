@@ -43,3 +43,9 @@ function callFunction(f){ //* I can pass functions as parameters of other functi
 }
 //* this also is a very common pattern here
 callFunction(hola);
+
+//* I can specifically import any module I need to use
+//* I have to save it into a variable so that I'm able to access to what is exported
+var counter = require("./count");
+console.log(counter(["Isagi", "Rin", "Shidou", "Aiku"]));
+
