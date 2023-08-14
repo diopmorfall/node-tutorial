@@ -17,7 +17,7 @@ let time = 0;
 let timer = setInterval(() => {
     time += 2
     console.log(`${time} seconds passed`)
-    if(time > 7){
+    if(time > 5){
         clearInterval(timer)
     }
 }, 2000)
@@ -26,4 +26,20 @@ let timer = setInterval(() => {
 console.log("directory", __dirname);
 console.log("filename", __filename);
 
+//? normal function statement
+function loca(){
+    console.log("Loca")
+}
 
+loca();
+
+//* function expression, very used in node
+var hola = function(){
+    console.log("hola");
+}
+
+function callFunction(f){ //* I can pass functions as parameters of other functions
+    f();
+}
+//* this also is a very common pattern here
+callFunction(hola);
