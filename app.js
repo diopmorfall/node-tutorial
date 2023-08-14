@@ -46,6 +46,7 @@ callFunction(hola);
 
 //* I can specifically import any module I need to use
 //* I have to save it into a variable so that I'm able to access to what is exported
-var counter = require("./count");
-console.log(counter(["Isagi", "Rin", "Shidou", "Aiku"]));
-
+var maths = require("./mathematician");
+console.log(maths.counter(["Isagi", "Rin", "Shidou", "Aiku"]));
+console.log(maths.adder(3, 4));
+console.log(maths.adder(2, maths.pi))
